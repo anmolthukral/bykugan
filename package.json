@@ -1,0 +1,24 @@
+{
+  "name": "bykugan",
+  "version": "1.0.0",
+  "description": "Lightweight, cross-browser usage screen recording utility for web and mobile",
+  "source": "src/index.js",
+  "main": "dist/bykugan.js",
+  "module": "dist/bykugan.module.js",
+  "unpkg": "dist/bykugan.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "keywords": [
+    "screen-recorder",
+    "webrtc",
+    "getDisplayMedia",
+    "screen-capture"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "microbundle": "^0.15.1"
+  }
+}
