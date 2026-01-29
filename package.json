@@ -7,8 +7,10 @@
   "module": "dist/bykugan.module.js",
   "unpkg": "dist/bykugan.umd.js",
   "scripts": {
-    "build": "microbundle",
-    "dev": "microbundle watch"
+  "build": "microbundle",
+  "dev": "microbundle watch",
+  "prepare": "npm run build",
+  "prepublishOnly": "node scripts/prepublish_check.js"
   },
   "keywords": [
     "screen-recorder",
@@ -16,8 +18,23 @@
     "getDisplayMedia",
     "screen-capture"
   ],
-  "author": "",
+  "author": "Anmol Thukral <thukral.anmol21@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anmolthukral/bykugan.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anmolthukral/bykugan/issues"
+  },
+  "homepage": "https://github.com/anmolthukral/bykugan#readme",
   "license": "MIT",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "microbundle": "^0.15.1"
   }
